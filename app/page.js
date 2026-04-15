@@ -8,6 +8,8 @@ export default function Home() {
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  console.log(trackerNumber);
+
   const fetchStatus = async () => {
     if (!trackerNumber) return;
 
