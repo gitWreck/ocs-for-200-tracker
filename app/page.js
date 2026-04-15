@@ -88,7 +88,7 @@ export default function Home() {
         className="w-full bg-blue-600 text-white flex justify-between items-center px-6 py-3 shadow"
         style={{ backgroundColor: "#8d1635" }} // custom color
       >
-        <h1 className="text-xl font-bold">Manuscript Status Tracker</h1>
+        <h1 className="text-xl font-bold">FOR 200 Status Tracker</h1>
         <img
           src="/logo.png" // put your logo inside public/logo.png
           alt="Logo"
@@ -105,10 +105,13 @@ export default function Home() {
         <p className="text-md">
           Enter your tracker number in the format <strong>202512345-AN</strong>{" "}
           (Student Number + first two letters of your first name). <br />
-          Then click <strong>Check Status</strong> to view your proposal status.{" "}
-          <br />
-          For Proposals, in case where you have resubmissions, the{" "}
-          <strong>top value</strong> is the latest status.
+          Then click <strong>Check Status</strong> to view your status. <br />
+          <strong>For Proposals,</strong>
+          in case where you have resubmissions, the <strong>
+            {" "}
+            top value
+          </strong>{" "}
+          is the latest status.
         </p>
       </div>
       {/* 🔹 CONTENT */}
@@ -194,7 +197,11 @@ export default function Home() {
                                 <span className="text-green-600 font-semibold">
                                   Complied with Format ✅
                                 </span>
-                              ) : entry["Remarks"] === "Resubmit" ? ( // covers empty string, null, undefined, or missing
+                              ) : entry["Remarks"] === "Approved" ? (
+                                <span className="text-green-600 font-semibold">
+                                  Approved ✅
+                                </span>
+                              ) : entry["Remarks"] === "Resubmit" ? (
                                 <span className="text-red-600 font-semibold">
                                   Resubmit ❌
                                 </span>
@@ -218,8 +225,8 @@ export default function Home() {
                     icon={faNoteSticky}
                     className="text-white w-4 h-4"
                   />
-                  If status is Resubmit or Complied with Format. Kindly pickup
-                  your manuscript at the office.
+                  If the status is Resubmit or Complied with Format. Kindly
+                  pickup your manuscript at the office.
                 </p>
               </div>
             )}
