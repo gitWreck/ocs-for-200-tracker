@@ -1,5 +1,5 @@
+"use client";
 export const dynamic = "force-dynamic";
-("use client");
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNoteSticky, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
