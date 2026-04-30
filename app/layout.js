@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Manuscript Status Tracker",
-  description: "Track your mansucript status easily",
+  title: "FOR 200 Tracker",
+  description: "Track records and status updates easily",
 };
 
 export default function RootLayout({ children }) {
