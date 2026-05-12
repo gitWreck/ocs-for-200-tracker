@@ -293,8 +293,8 @@ export default function Home() {
                   icon={faNoteSticky}
                   className="text-white w-4 h-4"
                 />
-                For proposal munscript with remarks. Kindly pickup your paper at
-                the office.
+                For manuscript with remarks. Kindly pickup your paper at the
+                office.
               </p>
             </div>
           </div>
