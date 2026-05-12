@@ -293,8 +293,8 @@ export default function Home() {
                   icon={faNoteSticky}
                   className="text-white w-4 h-4"
                 />
-                For pickup, resubmission, or other instructions, follow the
-                latest status or remarks shown above.
+                For proposal munscript with remarks. Kindly pickup your paper at
+                the office.
               </p>
             </div>
           </div>
